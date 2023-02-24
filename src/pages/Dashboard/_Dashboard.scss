@@ -1,18 +1,37 @@
-.test {
-  color: red;
-  background-color: aqua;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: cyber;
+  src: url(../.././assets/fonts/CyberskyFreeTrial-GOryA.otf);
+}
+
+.container {
+  background-image: url(../.././assets/img/mike-savage-2-2.jpg);
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  color: white;
+  font-family: cyber;
+  font-size: 200px;
+}
+
+.view-project {
   display: flex;
   justify-content: center;
-  text-align: center;
-  height: 100vh;
-  font-size: 30px;
-  & .title {
-    color: white;
-    background-color: brown;
-    margin: 10px 20px;
-  }
-  & .subTitle {
-    @extend .test;
-    color: black;
-  }
+}
+
+.btn-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: hsla(360, 99, 11, 70%);
+  width: 206px;
+  height: 72px;
+  font-size: 1.5rem;
 }

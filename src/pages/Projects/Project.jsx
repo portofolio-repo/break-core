@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Project() {
+export function Project() {
   return (
     <div className="Project">
       <div className="Container">MY PROJECT</div>
