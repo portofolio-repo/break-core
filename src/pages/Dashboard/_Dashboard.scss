@@ -7,11 +7,18 @@
   src: url(../.././assets/fonts/CyberskyFreeTrial-GOryA.otf);
 }
 
-.container {
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container1 {
   background-image: url(../.././assets/img/mike-savage-2-2.jpg);
   background-size: cover;
+  background-position-x: center;
   width: 100%;
-  height: auto;
+  height: 200vh;
 }
 
 .title {
@@ -20,12 +27,18 @@
   font-size: 200px;
 }
 
+.arrow {
+  position: relative;
+  left: 49%;
+}
+
 .view-project {
   display: flex;
   justify-content: center;
 }
 
 .btn-view {
+  margin-top: 4vh;
   display: flex;
   justify-content: center;
   align-items: center;
